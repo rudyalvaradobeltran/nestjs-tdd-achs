@@ -1,0 +1,58 @@
+{
+  "version": "0.0.1",
+  "name": "nestjs-tdd-achs",
+  "title": "TDD base project for DevSchool TDD session",
+  "description": "TDD base project for DevSchool TDD session",
+  "private": true,
+  "keywords": [
+    "achs",
+    "devschool",
+    "tdd",
+    "nest",
+    "node"
+  ],
+  "scripts": {
+    "start": "nest start",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@nestjs/common": "^7.6.15",
+    "@nestjs/core": "^7.6.15",
+    "@nestjs/platform-express": "^7.6.15",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^6.6.7"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^7.6.0",
+    "@nestjs/schematics": "^7.3.1",
+    "@nestjs/testing": "^7.6.15",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.6.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.6",
+    "ts-loader": "^9.1.2",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.2.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
